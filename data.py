@@ -1,53 +1,19 @@
-#def odd_or_even(number):
-#    if number % 2 == 0:
-#        return "even"
-#    else:
-#        return "odd"
+#aura = input("Please enter a sentence: ")
 
-#number = int(input("Enter a number: "))
-#print(odd_or_even(number))
+#def count_words(sentence):
+#    words_list = sentence.split()
+#    word_count = len(words_list)
+#    return word_count
 
-
-
-
-
-#def tipcalculator(bill, service):
-#    if service == "bad":
-#        tip_percent = 0
-#    elif service == "okay":
-#        tip_percent = 15
-#    elif service == "good":
-#        tip_percent = 20
-#    elif service == "great":
-#        tip_percent = 25
-#    else:
-#        return "Invalid service rating"
-
-#    tip = bill * tip_percent / 100
-#    total = bill + tip
-
-#    return total
-
-#bill = float(input("Enter the bill: "))
-
-#service = input("How was the service? ")
-
-#total = tipcalculator(bill, service)
-#print(f"Total: ${total:.2f}")
+#total_words = count_words(aura)
+#print(f"There are {total_words} words in your sentence.")
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+person = input("Please type a persons name")
+object = input("Please type a object")
+verb = input("Please type a verb")
+verb2 = input("Please type a different verb")
 
 
 
