@@ -45,8 +45,8 @@
 #       tip_percent = 20
 #   elif service == "great":
 #       tip_percent = 25
-#   elif service == "67":
-#       tip_percent = 67
+#   elif service == "Die":
+#       tip_percent = 123091239716481024981629
 
 #   tip = bill * tip_percent / 100
 #   total = bill + tip
@@ -57,18 +57,18 @@
 
 #service = input("How was the service?:")
 
-#total = tipcalculator(bill, service)
+#total = tipcalc(bill, service)
 #print(f"Total: ${total:.2f}")
 
+import random
 
-number = float(input("Enter a number: "))
+e = random.randint(1,10000)
 
-def factor():
-    for i range()
-        
-
-
-
-print(factor)
-
-
+while True:
+    guess = int(input("Please type an number: "))
+    if guess > e:
+        print("The number is lower")
+    if guess < e:
+        print("The number is higher")
+    if guess == e:
+        print("You got the number")
