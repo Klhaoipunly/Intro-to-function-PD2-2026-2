@@ -62,7 +62,7 @@
 
 import random
 
-e = random.randint(1,10000)
+e = random.randint(1,1000000)
 
 while True:
     guess = int(input("Please type an number: "))
