@@ -60,15 +60,25 @@
 #total = tipcalc(bill, service)
 #print(f"Total: ${total:.2f}")
 
-import random
 
-e = random.randint(1,1000000)
 
+def factors(number):
+    factors = []
+    for i in range(1, number + 1):
+        if number % i == 0:
+            factors.append(i)
+    return factors 
 while True:
-    guess = int(input("Please type an number: "))
-    if guess > e:
-        print("The number is lower")
-    if guess < e:
-        print("The number is higher")
-    if guess == e:
-        print("You got the number")
+    try:
+        num = int(input("Please enter a number: "))
+        if num == 9297375944:
+            print("Goodbye!")
+            break
+        result = factors(num)
+        print(f"The factors of {num} are: {result}\n")
+    except ValueError:
+        print("Please enter a valid number.\n")
+
+
+
+

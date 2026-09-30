@@ -22,28 +22,41 @@
 
 
 
-
-
-
-
-
 #integer
-x = 7
+#x = 7
 #String
-name= "Ellie"
+#name= "Ellie"
 #name.upper
 #boolean
-isValid= True
+#isValid= True
 #Float
-bill = 56.86
+#bill = 56.86
 
 
-students = ["Ellie", "Preston", "Ben", "Elyse"]
-students.append("Sofia")
-print (students [-1])
-for student in students:
-    if student == "Ben":
-        print(f'we found {student}')
+#students = ["Ellie", "Preston", "Ben", "Elyse"]
+#students.append("Sofia")
+#print (students [-1])
+#for student in students:
+#    if student == "Ben":
+#        print(f'we found {student}')
 #sting
-y = input("money?")
-z = y + 5
+#y = input("money?")
+#z = y + 5
+
+
+
+import random
+e = random.randint(1,2)
+tries = 1
+while True:
+    guess = int(input("Please type an number: "))
+    if guess > e:
+        print("The number is lower")
+        tries += 1
+    if guess < e:
+        print("The number is higher")
+        tries += 1
+    if guess == e:
+        print (f"You got the number in {tries} tries.")
+        break
+    
