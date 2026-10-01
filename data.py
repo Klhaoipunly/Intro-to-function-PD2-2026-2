@@ -62,23 +62,23 @@
 
 
 
-def factors(number):
-    factors = []
-    for i in range(1, number + 1):
-        if number % i == 0:
-            factors.append(i)
-    return factors 
-while True:
-    try:
-        num = int(input("Please enter a number: "))
-        if num == 9297375944:
-            print("Goodbye!")
-            break
-        result = factors(num)
-        print(f"The factors of {num} are: {result}\n")
-    except ValueError:
-        print("Please enter a valid number.\n")
+#def factors(number):
+#    factors = []
+#    for i in range(1, number + 1):
+#        if number % i == 0:
+#            factors.append(i)
+#    return factors 
+#while True:
+#    try:
+#        num = int(input("Please enter a number: "))
+#        if num == -1:
+#            print("Goodbye")
+#            break
+#        result = factors(num)
+#        print(f"The factors of {num} are: {result}\n")
+#    except ValueError:
+#        print("Please enter a number u idiot")
 
 
 
-
+def gcf_finder():
