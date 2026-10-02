@@ -59,7 +59,7 @@ while True:
     if guess == e:
         print (f"You got the number in {tries} tries.")
     if guess == e and tries == 1:
-        print (f"You got the number in 1 try. Good boy")
+        print (f"Wow, you got the number in 1 try. ")
 
         break
     
