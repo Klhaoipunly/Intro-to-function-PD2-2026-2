@@ -64,7 +64,7 @@
 
 #def factors(number):
 #    factors = []
-#    for i in range(1, number + 1):
+#    for i in range(1, number + 1): (67)
 #        if number % i == 0:
 #            factors.append(i)
 #    return factors 
@@ -94,19 +94,25 @@ def gcf_finder():
             number1 = int(input("Please enter the first number: "))
             number2 = int(input("Please enter the second number: "))
             
-            factors1 = factors(number1)
-            factors2 = factors(number2)
-            cf = [f for f in factors1 if f in factors2]
-            
-            gcf = max(cf)
+            factor1 = factors(number1)
+            factor2 = factors(number2)
+            f = [f for f in factor1 if f in factor2]
+            gcf = max(f)
             print(f"The Greatest Common Factor (GCF) is: {gcf}\n")
             
             print("Goodbye!")
             break
                 
         except ValueError:
-            print("Please enter a valid number u idiot!\n")
+            print("Please enter a number u idiot!\n")
 
 gcf_finder()
+
+
+
+
+
+
+
 
 
