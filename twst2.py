@@ -9,7 +9,30 @@
 
 
 
-wizard("A", 3, ["BA", "CB", "DA"])
-def wizard(owner, N, duels):
-    for i in range():
-        
+#def wizard(owner, N, duels):
+#who owns the wand
+    #last_owner = owner
+#number of times changes
+    #changes = 0
+#check 1 single battle
+#print(duels[0])
+#check first character
+#"""print(duels[0][0])"""
+#check if wand changed hands
+
+#wizard(3, "A", ["BA", "CB", "DA"])
+
+
+
+
+
+def wizards(N, start, duels):
+    owner = start
+    num_owners = 1
+    for i in range(N):
+        if duels[i][1] == owner:
+            owner = duels[i][0]
+            num_owners += 1
+    print(owner, num_owners)
+
+wizards(3, "A", ["BA", "CB", "DA"])

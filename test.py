@@ -45,21 +45,4 @@
 
 
 
-import random
-e = random.randint(1,2)
-tries = 1
-while True:
-    guess = int(input("Please type an number: "))
-    if guess > e:
-        print("The number is lower")
-        tries += 1
-    if guess < e:
-        print("The number is higher")
-        tries += 1
-    if guess == e:
-        print (f"You got the number in {tries} tries.")
-    if guess == e and tries == 1:
-        print (f"Wow, you got the number in 1 try. ")
-
-        break
     
